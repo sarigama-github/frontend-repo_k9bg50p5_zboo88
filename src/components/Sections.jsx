@@ -1,4 +1,4 @@
-import { Scale, Gavel, Shield, FileText, BrainCircuit, SearchCheck, MapPin, AlarmCheck, BookText, CheckCircle2 } from "lucide-react";
+import { Scale, Gavel, Shield, FileText, Brain, Search, AlarmClock, Book, CheckCircle2 } from "lucide-react";
 
 export default function Sections() {
   return (
@@ -58,8 +58,8 @@ function FeatureSection() {
 
 function ModesSection() {
   const items = [
-    { icon: AlarmCheck, title: "Emergency Mode", desc: "Fast, guided actions when help can’t wait." },
-    { icon: BookText, title: "Law Mode", desc: "Everyday legal answers grounded in real laws." },
+    { icon: AlarmClock, title: "Emergency Mode", desc: "Fast, guided actions when help can’t wait." },
+    { icon: Book, title: "Law Mode", desc: "Everyday legal answers grounded in real laws." },
     { icon: Gavel, title: "Deep Mode", desc: "Clause analysis, drafting, and precedent reasoning." },
     { icon: FileText, title: "Business Mode", desc: "Contracts, compliance, and automation for teams." },
     { icon: Shield, title: "Guardian Mode", desc: "Safety check-ins that alert trusted contacts." },
@@ -101,7 +101,7 @@ function DraftingSection() {
 
 function SearchSection() {
   return (
-    <Wrap id="search" title="Smart Legal Search" subtitle="Every answer is grounded in the law — not guesses." icon={SearchCheck}>
+    <Wrap id="search" title="Smart Legal Search" subtitle="Every answer is grounded in the law — not guesses." icon={Search}>
       <div className="grid gap-6 lg:grid-cols-2">
         <p className="text-slate-700">ResQ studies judgments, penal codes, and case histories using Nomadic embeddings and a local vector database to ensure fact-based responses.</p>
         <p className="text-slate-700">You don’t just get an answer — you get the law behind it.</p>
@@ -147,7 +147,7 @@ function TeamSection() {
 
 function VisionSection() {
   return (
-    <Wrap id="vision" title="Vision & Mission" icon={BrainCircuit}>
+    <Wrap id="vision" title="Vision & Mission" icon={Brain}>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
           <h3 className="font-medium text-slate-900">Vision</h3>
